@@ -15,6 +15,8 @@
 		7A39F90126DB6DE5004BC7CE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7A39F8FF26DB6DE5004BC7CE /* LaunchScreen.storyboard */; };
 		7A39F90D26DBEFAE004BC7CE /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A39F90C26DBEFAE004BC7CE /* WelcomeViewController.swift */; };
 		7A39F91426DC03F7004BC7CE /* Users.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A39F91326DC03F7004BC7CE /* Users.swift */; };
+		7A39F91626DC211A004BC7CE /* AboutMeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A39F91526DC211A004BC7CE /* AboutMeViewController.swift */; };
+		7A39F91826DC2DF9004BC7CE /* PictureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A39F91726DC2DF9004BC7CE /* PictureViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +30,8 @@
 		7A39F90226DB6DE5004BC7CE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7A39F90C26DBEFAE004BC7CE /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
 		7A39F91326DC03F7004BC7CE /* Users.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Users.swift; sourceTree = "<group>"; };
+		7A39F91526DC211A004BC7CE /* AboutMeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AboutMeViewController.swift; path = AboutMe/ViewControllers/AboutMeViewController.swift; sourceTree = SOURCE_ROOT; };
+		7A39F91726DC2DF9004BC7CE /* PictureViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PictureViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,7 +77,9 @@
 			isa = PBXGroup;
 			children = (
 				7A39F8F826DB6DE3004BC7CE /* LoginViewController.swift */,
+				7A39F91726DC2DF9004BC7CE /* PictureViewController.swift */,
 				7A39F90C26DBEFAE004BC7CE /* WelcomeViewController.swift */,
+				7A39F91526DC211A004BC7CE /* AboutMeViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -187,6 +193,8 @@
 				7A39F90D26DBEFAE004BC7CE /* WelcomeViewController.swift in Sources */,
 				7A39F8F526DB6DE3004BC7CE /* AppDelegate.swift in Sources */,
 				7A39F91426DC03F7004BC7CE /* Users.swift in Sources */,
+				7A39F91826DC2DF9004BC7CE /* PictureViewController.swift in Sources */,
+				7A39F91626DC211A004BC7CE /* AboutMeViewController.swift in Sources */,
 				7A39F8F726DB6DE3004BC7CE /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -14,7 +14,7 @@ struct User {
         User(
             login: "User",
             password: "Password" ,
-            person: Person(name: "John", surname: "Smith")
+            person: Person(name: "John", surname: "Smith", profession: "Sailor", picture: "⚓️")
         )
     }
 }
@@ -22,4 +22,6 @@ struct User {
 struct Person {
     let name: String
     let surname: String
+    let profession: String
+    let picture: String
 }

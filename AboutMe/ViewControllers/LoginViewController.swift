@@ -15,8 +15,19 @@ class LoginViewController: UIViewController {
     @IBOutlet weak var passwordTextField: UITextField!
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        guard let welcomeVC = segue.destination as? WelcomeViewController else { return }
-        welcomeVC.welcomeUser = user
+        let tabBarController = segue.destination as! UITabBarController
+        let viewControllers = tabBarController.viewControllers
+        
+        for viewController in viewControllers! {
+            if let welcomeVC = viewController as? WelcomeViewController {
+                welcomeVC.welcomeUser = user
+            } else if let pictureVC = viewController as? PictureViewController {
+                pictureVC.user = user
+            } else if let navigationVC = viewController as? UINavigationController {
+                let aboutUserVC = navigationVC.topViewController as? AboutMeViewController
+                aboutUserVC?.user = user
+            }
+        }
     }
     
     @IBAction func forgotUserNamePressed() {
