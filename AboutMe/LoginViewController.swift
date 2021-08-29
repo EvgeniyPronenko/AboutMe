@@ -18,30 +18,41 @@ class LoginViewController: UIViewController {
     }
     
     @IBAction func forgotUserNamePressed() {
-        showAlert(with: "Oooops!",
-                  and: "Your name is User 🤪",
-                  cleanPasswordField: false)
+        showAlert(
+            with: "Oooops!",
+            and: "Your name is User 🤪",
+            cleanPasswordField: false
+        )
     }
     
     @IBAction func forgotPasswordPressed() {
-        showAlert(with: "Oooops!",
-                  and: "Your password is Password",
-                  cleanPasswordField: false)
+        showAlert(
+            with: "Oooops!",
+            and: "Your password is Password",
+            cleanPasswordField: false
+        )
     }
     
     @IBAction func logInPressed() {
         if userNameTextField.text != "User" || passwordTextField.text != "Password" {
-            showAlert(with: "Invalid login or password",
-                      and: "Please, enter correct login and password",
-                      cleanPasswordField: true)
+            showAlert(
+                with: "Invalid login or password",
+                and: "Please, enter correct login and password",
+                cleanPasswordField: true
+            )
         }
     }
     
-    private func showAlert(with title: String, and message: String,
-                           cleanPasswordField: Bool){
-        
-        let alert = UIAlertController(title: title, message: message,
-                                      preferredStyle: .alert)
+    private func showAlert(
+        with title: String,
+        and message: String,
+        cleanPasswordField: Bool
+    ){
+        let alert = UIAlertController(
+            title: title,
+            message: message,
+            preferredStyle: .alert
+        )
         
         let okAction = UIAlertAction(title: "OK", style: .default) { _ in
             if cleanPasswordField {
