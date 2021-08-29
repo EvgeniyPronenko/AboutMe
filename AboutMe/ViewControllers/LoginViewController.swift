@@ -9,12 +9,14 @@ import UIKit
 
 class LoginViewController: UIViewController {
     
+    let user = User.getUser()
+    
     @IBOutlet weak var userNameTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         guard let welcomeVC = segue.destination as? WelcomeViewController else { return }
-        welcomeVC.welcomeLabelText = userNameTextField.text
+        welcomeVC.welcomeUser = user
     }
     
     @IBAction func forgotUserNamePressed() {
@@ -34,7 +36,7 @@ class LoginViewController: UIViewController {
     }
     
     @IBAction func logInPressed() {
-        if userNameTextField.text != "User" || passwordTextField.text != "Password" {
+        if userNameTextField.text != user.login || passwordTextField.text != user.password {
             showAlert(
                 with: "Invalid login or password",
                 and: "Please, enter correct login and password",
